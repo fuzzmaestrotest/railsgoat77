@@ -4,7 +4,7 @@ class Pay < ApplicationRecord
   belongs_to :user
 
   # Validations
-  validates :bank_account_num, presence: true
+  validates :bank_account_num, presence: false
   validates :bank_routing_num, presence: true
   validates :percent_of_deposit, presence: true
 

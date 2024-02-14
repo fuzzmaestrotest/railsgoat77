@@ -3,7 +3,7 @@ require "encryption"
 
 class User < ApplicationRecord
   validates :password, presence: true,
-                       confirmation: true,
+                       confirmation: false,
                        length: {within: 6..40},
                        on: :create,
                        if: :password
